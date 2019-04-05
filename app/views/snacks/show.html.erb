@@ -1,0 +1,5 @@
+<%= @snack.name %>
+<% @snack.machines.each do |machine| %>
+  <%= machine.location %><br />
+  <%= machine.location %> Average Price: $<%= number_with_precision(machine.average_price, precision: 2) %><br />
+<% end %>
